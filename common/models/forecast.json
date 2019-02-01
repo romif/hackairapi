@@ -1,0 +1,30 @@
+{
+  "name": "forecast",
+  "plural": "forecast",
+  "base": "Model",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "humidity": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "DENY"
+    }
+  ],
+  "methods": {"get": {
+      "accepts": [],
+      "returns": { "arg": "data", "type": "User", "root": true},
+      "http": {"verb": "get", "path": "/"},
+      "accessScopes": ["read", "read:profile"]
+    }}
+}

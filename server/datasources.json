@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mongoDS": {
+    "host": "ds161426.mlab.com",
+    "port": 61426,
+    "url": "",
+    "database": "heroku_nwp40fn1",
+    "password": "dhn0bk0ahfcu0bs4bk2nvqeful",
+    "name": "mongoDS",
+    "user": "heroku_nwp40fn1",
+    "connector": "mongodb"
+  }
+}
